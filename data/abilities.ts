@@ -27,7 +27,7 @@ Ratings and how they work:
 	ex. Adaptability, Magic Bounce
 
  5: Essential
-	  The sort of ability that defines metagames.
+	  The sort of ability that defines metagame.
 	ex. Imposter, Shadow Tag
 
 */
@@ -40,6 +40,54 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 0.1,
 		num: 0,
 	},
+	duckboost: {
+	onStart(pokemon) {
+	this.boost({ atk: 2, def: 2, spa: 2, spd: 2, spe: 2 });
+	this.heal(pokemon.baseMaxhp / 3);
+	},
+	flags: {},
+	name: "Duck Boost",
+	rating: 4, 
+	num: 311,
+},
+teddystall: {
+	onStart(pokemon) {
+	this.boost({ def: 2, spd: 2 });
+	this.heal(pokemon.baseMaxhp / 4);
+	pokemon.trySetStatus('tox', pokemon);
+	},
+	onDamagePriority: 1,
+		onDamage(damage, target, source, effect) {
+			if (effect.id === 'psn' || effect.id === 'tox') {
+				this.heal(target.baseMaxhp / 8);
+				return false;
+			}
+		},
+	onResidual(pokemon) {
+	this.heal(pokemon.baseMaxhp / 8);
+	},
+	flags: {},
+	name: "Teddy Stall",
+	rating: 4, 
+	num: 312,
+},
+suppression: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Suppression', 'boost');
+					activated = true;
+					target.addVolatile('mustrecharge');
+					this.boost({ atk: -1, spa: -1, spe: -1 }, target, pokemon, null, true);
+				}}		
+		},
+		flags: {},
+		name: "Suppression",
+		rating: 4,
+		num: 313,
+	},
+	
 	adaptability: {
 		onModifySTAB(stab, source, target, move) {
 			if (move.forceSTAB || source.hasType(move.type)) {
@@ -3298,27 +3346,48 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: 143,
 	},
-	powerconstruct: {
-		onResidualOrder: 29,
-		onResidual(pokemon) {
-			if (pokemon.baseSpecies.baseSpecies !== 'Zygarde' || pokemon.transformed || !pokemon.hp) return;
-			if (pokemon.species.id === 'zygardecomplete' || pokemon.hp > pokemon.maxhp / 2) return;
-			this.add('-activate', pokemon, 'ability: Power Construct');
-			pokemon.formeChange('Zygarde-Complete', this.effect, true);
-			pokemon.formeRegression = true;
-			pokemon.baseMaxhp = Math.floor(Math.floor(
-				2 * pokemon.species.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] / 4) + 100
-			) * pokemon.level / 100 + 10);
-			const newMaxHP = pokemon.volatiles['dynamax'] ? (2 * pokemon.baseMaxhp) : pokemon.baseMaxhp;
-			pokemon.hp = newMaxHP - (pokemon.maxhp - pokemon.hp);
-			pokemon.maxhp = newMaxHP;
-			this.add('-heal', pokemon, pokemon.getHealth, '[silent]');
-		},
-		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
-		name: "Power Construct",
-		rating: 5,
-		num: 211,
+    powerconstruct: {
+        onStart(pokemon) {
+            // Skip if already Complete Forme or not Zygarde
+            if (pokemon.baseSpecies.baseSpecies !== 'Zygarde' || 
+                pokemon.species.id === 'zygardecomplete' || 
+                pokemon.transformed) return;
+            
+            this.add('-activate', pokemon, 'ability: Power Construct');
+            
+            // Transform into Complete Forme
+            pokemon.formeChange('Zygarde-Complete', this.effect, true);
+            pokemon.formeRegression = true; // Prevent reverting
+            
+            // Recalculate max HP for Complete Forme's higher base HP
+            pokemon.baseMaxhp = Math.floor(Math.floor(
+                2 * pokemon.species.baseStats['hp'] + 
+                pokemon.set.ivs['hp'] + 
+                Math.floor(pokemon.set.evs['hp'] / 4) + 100
+            ) * pokemon.level / 100 + 10);
+            
+            // Preserve HP percentage
+            const newMaxHP = pokemon.volatiles['dynamax'] ? (2 * pokemon.baseMaxhp) : pokemon.baseMaxhp;
+            pokemon.hp = newMaxHP - (pokemon.maxhp - pokemon.hp);
+            pokemon.maxhp = newMaxHP;
+            this.add('-heal', pokemon, pokemon.getHealth, '[silent]');
+        },
+	onResidual(pokemon) {
+	this.heal(pokemon.baseMaxhp / 8);
+	pokemon.cureStatus();
 	},
+        flags: { 
+            failroleplay: 1, 
+            noreceiver: 1, 
+            noentrain: 1, 
+            notrace: 1, 
+            failskillswap: 1, 
+            cantsuppress: 1 
+        },
+        name: "Power Construct",
+        rating: 5,
+        num: 211,
+    },
 	powerofalchemy: {
 		onAllyFaint(target) {
 			if (!this.effectState.target.hp) return;
@@ -3968,40 +4037,38 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 157,
 	},
 	schooling: {
-		onSwitchInPriority: -1,
-		onStart(pokemon) {
-			if (pokemon.baseSpecies.baseSpecies !== 'Wishiwashi' || pokemon.level < 20 || pokemon.transformed) return;
-			if (pokemon.hp > pokemon.maxhp / 4) {
-				if (pokemon.species.id === 'wishiwashi') {
-					pokemon.formeChange('Wishiwashi-School');
-				}
-			} else {
-				if (pokemon.species.id === 'wishiwashischool') {
-					pokemon.formeChange('Wishiwashi');
-				}
-			}
-		},
-		onResidualOrder: 29,
-		onResidual(pokemon) {
-			if (
-				pokemon.baseSpecies.baseSpecies !== 'Wishiwashi' || pokemon.level < 20 ||
-				pokemon.transformed || !pokemon.hp
-			) return;
-			if (pokemon.hp > pokemon.maxhp / 4) {
-				if (pokemon.species.id === 'wishiwashi') {
-					pokemon.formeChange('Wishiwashi-School');
-				}
-			} else {
-				if (pokemon.species.id === 'wishiwashischool') {
-					pokemon.formeChange('Wishiwashi');
-				}
-			}
-		},
-		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
-		name: "Schooling",
-		rating: 3,
-		num: 208,
-	},
+    onSwitchInPriority: -1,
+    onStart(pokemon) {
+        if (pokemon.baseSpecies.baseSpecies !== 'Wishiwashi' || pokemon.level < 20 || pokemon.transformed) return;
+        if (pokemon.hp > pokemon.maxhp / 4) {
+            if (pokemon.species.id === 'wishiwashi') {
+                pokemon.formeChange('Wishiwashi-School');
+            }
+        } else {
+            if (pokemon.species.id === 'wishiwashischool') {
+                pokemon.formeChange('Wishiwashi');
+            }
+        }
+    },
+    onResidualOrder: 29,
+    onResidual(pokemon) {
+        if (
+            pokemon.baseSpecies.baseSpecies !== 'Wishiwashi' || pokemon.level < 20 ||
+            pokemon.transformed || !pokemon.hp
+        ) return;
+        if (pokemon.hp > pokemon.maxhp / 4) {
+            if (pokemon.species.id === 'wishiwashi') {
+                pokemon.formeChange('Wishiwashi-School');
+            }
+        } else {
+            pokemon.heal(pokemon.baseMaxhp / 3);
+        } // <-- Fixed: Added missing closing brace for else block
+    }, // <-- This is the correct closing brace for onResidual
+    flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
+    name: "Schooling",
+    rating: 3,
+    num: 208,
+},
 	scrappy: {
 		onModifyMovePriority: -5,
 		onModifyMove(move) {

@@ -1888,25 +1888,27 @@ export class BattleActions {
 		return null;
 	}
 
-	runMegaEvo(pokemon: Pokemon) {
-		const speciesid = pokemon.canMegaEvo || pokemon.canUltraBurst;
-		if (!speciesid) return false;
+runMegaEvo(pokemon: Pokemon) {
+	const speciesid = pokemon.canMegaEvo || pokemon.canUltraBurst;
 
-		pokemon.formeChange(speciesid, pokemon.getItem(), true);
-
-		// Limit one mega evolution
-		const wasMega = pokemon.canMegaEvo;
-		for (const ally of pokemon.side.pokemon) {
-			if (wasMega) {
-				ally.canMegaEvo = null;
-			} else {
-				ally.canUltraBurst = null;
-			}
-		}
-
-		this.battle.runEvent('AfterMega', pokemon);
-		return true;
+	// Initialize the flag if it doesn't exist
+	if (pokemon.hasMegaEvolved === undefined) {
+		pokemon.hasMegaEvolved = false;
 	}
+
+	// Prevent a second Mega Evolution for the same Pokémon
+	if (!speciesid || pokemon.hasMegaEvolved) return false;
+
+	pokemon.formeChange(speciesid, pokemon.getItem(), true);
+
+	pokemon.hasMegaEvolved = true;
+
+	this.battle.runEvent('AfterMega', pokemon);
+	return true;
+}
+
+
+
 
 	// Let's Go
 	canMegaEvoX?: (this: BattleActions, pokemon: Pokemon) => string | null;

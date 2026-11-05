@@ -1,4 +1,30 @@
 export const MovesText: { [id: IDEntry]: MoveText } = {
+	"zekromkick": {
+		name: "Zekrom Kick",
+		desc: "Ignores immunity and replaces target ability with slow start",
+		shortdesc: "Ignores immunity and replaces target ability",
+},
+	"lopunnykick": {
+		name: "Lopunny Kick",
+		desc: "Blocks healing and escape, lowers target def, atk, spa by 1 each",
+		shortdesc: "Blocks healing and escape, lowers target def, atk, spa",
+},
+	"genesectslash": {
+		name: "Genesect Slash",
+		desc: "Removes status, tries to par, frz, then burn in that order",
+		shortdesc: "Removes target status and tries to inflict status",
+},
+	"genesectkick": {
+		name: "Genesect Kick",
+		desc: "Hits 4 times, fire, ice, electric, and bug",
+		shortdesc: "Hits 4 times, cycling between types",
+},
+	"adaptivekick": {
+		name: "Adaptive Kick",
+		desc: "Hits 3 times. 1st: -1 Def, 2nd: -1 SpD, 3rd: uses SpD for damage calc, then calculates which defense to boost +2",
+        	shortDesc: "3 hits. Lowers Def/SpD, 3rd uses SpD.",
+},
+
 	"10000000voltthunderbolt": {
 		name: "10,000,000 Volt Thunderbolt",
 		desc: "Has a very high chance for a critical hit.",

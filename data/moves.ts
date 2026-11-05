@@ -1,6 +1,172 @@
 // List of flags and their descriptions can be found in sim/dex-moves.ts
 
 export const Moves: import('../sim/dex-moves').MoveDataTable = {
+	"zekromkick": {
+		num: 1001,
+		accuracy: 100,
+		basePower: 120,
+		category: "Physical",
+		name: "Zekrom Kick",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		ignoreImmunity: true,
+		onHit(pokemon) {
+			const oldAbility = pokemon.setAbility('slowstart');
+			if (oldAbility) {
+				this.add('-ability', pokemon, 'Slow Start', '[from] move: Zekrom Kick');
+				return;
+			}
+			return oldAbility as false | null;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dragon",
+	},
+	"lopunnykick": {
+		num: 1002,
+		accuracy: 100,
+		basePower: 120,
+		category: "Physical",
+		name: "Lopunny Kick",
+		pp: 20,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		secondary: {chance: 100,
+			boosts: {
+				def: -1,
+				atk: -1,
+				spa: -1,
+			},
+			volatileStatus: 'healblock',
+			onHit(target, source, move) {
+				if (source.isActive) target.addVolatile('trapped', source, move, 'trapper');
+			},
+		},
+		target: "normal",
+		type: "Normal",
+	},
+	"genesectslash": {
+		num: 1003,
+		accuracy: 100,
+		basePower: 120,
+		basePowerCallback(pokemon, target, move) {
+			if (target.status || target.hasAbility('comatose')) {
+				this.debug('BP increased from status condition');
+				return move.basePower * 1.2;
+			}
+			return move.basePower;
+		},
+		category: "Physical",
+		name: "Genesect Slash",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		ignoreImmunity: true,
+		secondary: {
+			chance: 100,
+			onHit(target) {
+			target.cureStatus()
+			target.trySetStatus('par', target);
+			target.trySetStatus('frz', target);
+			target.trySetStatus('brn', target);	
+		},
+			volatileStatus: 'healblock',
+		},
+		target: "normal",
+		type: "Steel",
+	},
+	genesectkick: {
+        num: 1004, 
+        accuracy: 100,
+        basePower: 30,
+        category: "Physical",
+        name: "Genesect Kick",
+        pp: 10,
+        priority: 0,
+        flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+        multihit: 4, 
+        onPrepareHit(target, source, move) {
+            // Store the types for each hit (customize these as desired)
+            move.types = ['Fire', 'Ice', 'Electric', 'Bug', 'Fire'];
+	    const type = move.types[0];
+            this.add('-message', `${source.name}'s attack became ${type}-type!`);
+            move.type = type;
+        },
+        onHit(target, source, move) {
+            const type = move.types[move.hit];
+            this.add('-message', `${source.name}'s attack became ${type}-type!`);
+            move.type = type;
+            
+        },
+        secondary: null,
+        target: "normal",
+        type: "Bug", 
+    },
+	adaptivekick: {
+        num: 1005, // Custom move ID
+        accuracy: 100,
+        basePower: 50,
+        category: "Physical",
+        name: "Adaptive Kick",
+        pp: 10,
+        priority: 0,
+        flags: {contact: 1, protect: 1, mirror: 1},
+        multihit: 3,
+        onBasePower(basePower, pokemon, target, move) {
+            if (move.hit === 3) {
+                // Override BP for third hit (40 instead of 30)
+                return 75;
+            }
+        },
+        onAfterHit(target, source, move) {
+            if (move.hit === 3) {
+                const phys = target.getStat('atk', false, true); // Raw Attack
+                const spec = target.getStat('spa', false, true); // Raw Sp. Attack
+                
+                if (phys > spec) {
+                    this.boost({def: 2}, source, source, move);
+                } else {
+                    this.boost({spd: 2}, source, source, move); 
+                }
+            }
+        },
+        // First hit: Lowers Defense
+        onHit(target, source, move) {
+            if (move.hit === 1) {
+                this.boost({def: -1}, target, source);
+            }
+	    if (move.hit === 2) {
+                this.boost({spd: -1}, target, source);
+            }		
+        },
+        
+        // Third hit: Uses target's SpDef instead of Def
+        onModifyMove(move, pokemon, target) {
+            if (move.hit === 3) {
+                move.overrideDefensiveStat = 'spd';
+            }
+        },
+        secondary: null,
+        target: "normal",
+        type: "Fighting",
+    },	
+	"auracylinder": {
+		num: 1006,
+		accuracy: true,
+		basePower: 100,
+		category: "Special",
+		name: "Aura Cylinder",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, distance: 1, metronome: 1, bullet: 1, pulse: 1 },
+		ignoreImmunity: true,
+		stealsBoosts: true,
+		drain: [1, 2],
+		secondary: null,
+		target: "normal",
+		type: "Fighting",
+	},		
 	"10000000voltthunderbolt": {
 		num: 719,
 		accuracy: true,

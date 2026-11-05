@@ -1,0 +1,2243 @@
+{
+    "ogerponcornerstone": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Ivy Cudgel",
+                    "Spiky Shield",
+                    "U-turn",
+                    "Genesect Slash"
+                ],
+                "abilities": [
+                    "Regenerator"
+                ],
+                "teraTypes": [
+                    "Rock"
+                ],
+                "item": "Cornerstone Mask",
+                "evs": {
+                    "HP": 176,
+                    "Atk": 248,
+                    "Def": 8,
+                    "SpD": 20,
+                    "Spe": 56
+                },
+                "nature": "Adamant"
+            },
+            {
+                "role": "filler",
+                "movepool": [
+                    "Ivy Cudgel",
+                    "Genesect Slash",
+                    "Power Whip",
+                    "Spiky Shield"
+                ],
+                "abilities": [
+                    "Duck Boost"
+                ],
+                "teraTypes": [
+                    "Rock"
+                ],
+                "item": "Cornerstone Mask",
+                "evs": {
+                    "HP": 4,
+                    "Atk": 252,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }
+        ]
+    },
+    "groudonprimal": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Eruption",
+                    "Earth Power",
+                    "Solar Beam",
+                    "Thunderbolt"
+                ],
+                "abilities": [
+                    "Desolate Land"
+                ],
+                "teraTypes": [
+                    "Ground"
+                ],
+                "item": "Red Orb",
+                "evs": {
+                    "HP": 252,
+                    "SpA": 252,
+                    "SpD": 4
+                },
+                "nature": "Modest"
+            }
+        ]
+    },
+    "yveltal": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Oblivion Wing",
+                    "Foul Play",
+                    "Heat Wave",
+                    "Aura Cylinder"
+                ],
+                "abilities": [
+                    "Fur Coat"
+                ],
+                "teraTypes": [
+                    "Poison"
+                ],
+                "item": "Assault Vest",
+                "evs": {
+                    "HP": 252,
+                    "SpA": 88,
+                    "SpD": 32,
+                    "Spe": 136
+                },
+                "nature": "Timid",
+                "ivs": {
+                    "Atk": 0
+                }
+            },{
+                "role": "filler",
+                "movepool": [
+                    "Oblivion Wing",
+                    "Foul Play",
+                    "Heat Wave",
+                    "Aura Cylinder"
+                ],
+                "abilities": [
+                    "Regenerator"
+                ],
+                "teraTypes": [
+                    "Fairy"
+                ],
+                "item": "Assault Vest",
+                "evs": {
+                    "HP": 252,
+                    "SpA": 88,
+                    "SpD": 32,
+                    "Spe": 136
+                },
+                "nature": "Timid",
+                "ivs": {
+                    "Atk": 0
+                }
+            }
+        ]
+    },
+    "lopunnymega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Adaptive Kick",
+                    "Fake Out",
+                    "Lopunny Kick",
+                    "Zekrom Kick"
+                ],
+                "abilities": [
+                    "Duck Boost"
+                ],
+                "teraTypes": [
+                    "Normal"
+                ],
+                "item": "Lopunnite",
+                "nature": "Jolly"
+            }
+        ]
+    },
+    "tapukoko": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Thunderbolt",
+                    "Roost",
+                    "Ice Beam",
+                    "U-turn"
+                ],
+                "abilities": [
+                    "Electric Surge"
+                ],
+                "teraTypes": [
+                    "Electric"
+                ],
+                "item": "Electrium Z",
+                "evs": {
+                    "Def": 4,
+                    "SpA": 252,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "genesect": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "U-turn",
+                    "Genesect Slash",
+                    "Glacial Lance",
+                    "Genesect Kick"
+                ],
+                "abilities": [
+                    "Duck Boost"
+                ],
+                "teraTypes": [
+                    "Bug"
+                ],
+                "item": "Life Orb",
+                "evs": {
+                    "Atk": 252,
+                    "Hp": 4,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }, {
+                "role": "filler",
+                "movepool": [
+                    "U-turn",
+                    "Genesect Slash",
+                    "Genesect Kick",
+                    "Glacial Lance"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Bug"
+                ],
+                "item": "Life Orb",
+                "evs": {
+                    "Atk": 252,
+                    "Hp": 4,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }
+        ]
+    },
+    "kyogreprimal": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Aqua Tail",
+                    "Heavy Slam",
+                    "Sleep Talk",
+                    "Recover"
+                ],
+                "abilities": [
+                    "Primordial Sea"
+                ],
+                "teraTypes": [
+                    "Water"
+                ],
+                "item": "Blue Orb",
+                "evs": {
+                    "Atk": 252,
+                    "Def": 4,
+                    "Spe": 252
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "sableyemega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Knock Off",
+                    "Will-O-Wisp",
+                    "Recover",
+                    "Protect"
+                ],
+                "abilities": [
+                    "Prankster"
+                ],
+                "teraTypes": [
+                    "Dark"
+                ],
+                "item": "Sablenite",
+                "evs": {
+                    "HP": 248,
+                    "Def": 8,
+                    "SpD": 252
+                },
+                "nature": "Careful"
+            }
+        ]
+    },"alakazam": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Energy Ball",
+                    "Psyshock",
+                    "Shadow Ball",
+                    "Aura Cylinder"
+                ],
+                "abilities": [
+                    "Magic Guard"
+                ],
+                "teraTypes": [
+                    "Psychic"
+                ],
+                "item": "Life Orb",
+                "evs": {
+                    "HP": 4,
+                    "SpA": 252,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "gardevoirmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Hyper Voice",
+                    "Psyshock",
+                    "Aura Cylinder",
+                    "Recover"
+                ],
+                "abilities": [
+                    "Trace"
+                ],
+                "teraTypes": [
+                    "Psychic"
+                ],
+                "item": "Gardevoirite",
+                "evs": {
+                    "SpA": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "gallademega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Adaptive Kick",
+                    "Knock Off",
+                    "Swords Dance",
+                    "Psycho Cut"
+                ],
+                "abilities": [
+                    "Intrepid Sword"
+                ],
+                "teraTypes": [
+                    "Psychic"
+                ],
+                "item": "Galladite",
+                "evs": {
+                    "Atk": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "salamencemega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Lopunny Kick",
+                    "Facade",
+                    "Dragon Dance",
+                    "Zekrom Kick"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Dragon"
+                ],
+                "item": "Salamencite",
+                "evs": {
+                    "HP": 4,
+                    "Atk": 252,
+                    "Spe": 252
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "latiasmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Ice Beam",
+                    "Aura Cylinder",
+                    "Thunder Wave",
+                    "Roost"
+                ],
+                "abilities": [
+                    "Levitate"
+                ],
+                "teraTypes": [
+                    "???"
+                ],
+                "item": "Latiasite",
+                "evs": {
+                    "HP": 248,
+                    "Def": 8,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "zeraora": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Plasma Fists",
+                    "Adaptive Kick",
+                    "Grass Knot",
+                    "Knock Off"
+                ],
+                "abilities": [
+                    "Volt Absorb"
+                ],
+                "teraTypes": [
+                    "Electric"
+                ],
+                "item": "Life Orb",
+                "evs": {
+                    "Atk": 252,
+                    "SpA": 4,
+                    "Spe": 252
+                },
+                "nature": "Naive"
+            }
+        ]
+    },"metagrossmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Bullet Punch",
+                    "Genesect Slash",
+                    "Psychic Fangs",
+                    "Hammer Arm"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "item": "Metagrossite",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 252,
+                    "SpD": 4
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "charizardmegax": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Zekrom Kick",
+                    "Flare Blitz",
+                    "Thunder Punch",
+                    "Dragon Dance"
+                ],
+                "abilities": [
+                    "Drought"
+                ],
+                "teraTypes": [
+                    "Fire"
+                ],
+                "item": "Charizardite X",
+                "evs": {
+                    "HP": 4,
+                    "Atk": 252,
+                    "Spe": 252
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "ferrothorn": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Leech Seed",
+                    "Body Press",
+                    "Gyro Ball",
+                    "Protect"
+                ],
+                "abilities": [
+                    "Teddy Stall"
+                ],
+                "teraTypes": [
+                    "Water"
+                ],
+                "item": "Rocky Helmet",
+                "evs": {
+                    "HP": 252,
+                    "Def": 196,
+                    "SpD": 60
+                },
+                "nature": "Impish"
+            }
+        ]
+    },
+    "zamazenta": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Body Press",
+                    "Roar",
+                    "Iron Defense",
+                    "Recover"
+                ],
+                "abilities": [
+                    "Fur Coat"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "item": "Leftovers",
+                "evs": {
+                    "HP": 252,
+                    "Def": 252,
+                    "SpD": 4
+                },
+                "nature": "Impish"
+            }
+        ]
+    },
+    "mewtwomegax": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Aura Cylinder",
+                    "Psystrike",
+                    "Shadow Ball",
+                    "Recover"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Psychic"
+                ],
+                "item": "Mewtwonite X",
+                "evs": {
+                    "SpA": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Modest"
+            }
+        ]
+    },
+    "mawilemega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Sucker Punch",
+                    "Genesect Slash",
+                    "Stone Edge",
+                    "Swords Dance"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "item": "Mawilite",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 252,
+                    "SpD": 4
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "swampertmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Darkest Lariat",
+                    "Ice Punch",
+                    "Waterfall",
+                    "Earthquake"
+                ],
+                "abilities": [
+                    "Drizzle"
+                ],
+                "teraTypes": [
+                    "Water"
+                ],
+                "item": "Swampertite",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 252,
+                    "SpD": 4
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "medichammega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Fake Out",
+                    "Ice Punch",
+                    "Recover",
+                    "High Jump Kick"
+                ],
+                "abilities": [
+                    "Pure Power"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "item": "Medichamite",
+                "evs": {
+                    "Atk": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "melmetal": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Genesect Slash",
+                    "Ice Punch",
+                    "Thunder Punch",
+                    "Superpower"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "item": "Assault Vest",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 252,
+                    "SpD": 4
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "nidoking": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Sludge Wave",
+                    "Earth Power",
+                    "Ice Beam",
+                    "Thunderbolt"
+                ],
+                "abilities": [
+                    "Sheer Force"
+                ],
+                "teraTypes": [
+                    "Stellar"
+                ],
+                "item": "Life Orb",
+                "evs": {
+                    "HP": 4,
+                    "SpA": 252,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "shedinja": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Poltergeist",
+                    "Will-O-Wisp",
+                    "Protect",
+                    "Hone Claws"
+                ],
+                "abilities": [
+                    "Wonder Guard"
+                ],
+                "teraTypes": [
+                    "Electric"
+                ],
+                "item": "Air Balloon",
+                "evs": {
+                    "Atk": 252,
+                    "SpA": 4,
+                    "Spe": 252
+                },
+                "nature": "Lonely"
+            }
+        ]
+    },
+    "aegislash": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Substitute",
+                    "Toxic",
+                    "King's Shield",
+                    "Shadow Ball"
+                ],
+                "abilities": [
+                    "Stance Change"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "item": "Leftovers",
+                "evs": {
+                    "HP": 252,
+                    "SpA": 56,
+                    "SpD": 156,
+                    "Spe": 44
+                },
+                "nature": "Modest"
+            }
+        ]
+    },
+    "wishiwashi": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Scald",
+                    "U-turn",
+                    "Recover",
+                    "Toxic"
+                ],
+                "abilities": [
+                    "Schooling"
+                ],
+                "teraTypes": [
+                    "Water"
+                ],
+                "item": "Leftovers",
+                "evs": {
+                    "HP": 252,
+                    "Def": 252,
+                    "Spe": 4
+                },
+                "nature": "Relaxed"
+            }
+        ]
+    },
+    "golisopod": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "First Impression",
+                    "Genesect Kick",
+                    "Liquidation",
+                    "Knock Off"
+                ],
+                "abilities": [
+                    "Teddy Stall"
+                ],
+                "teraTypes": [
+                    "Bug"
+                ],
+                "item": "Life Orb",
+                "evs": {
+                    "HP": 156,
+                    "Atk": 252,
+                    "Spe": 100
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "marshadow": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Spectral Thief",
+                    "Drain Punch",
+                    "Shadow Sneak",
+                    "Pursuit"
+                ],
+                "abilities": [
+                    "Technician"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "item": "Marshadium Z",
+                "evs": {
+                    "HP": 4,
+                    "Atk": 252,
+                    "Spe": 252
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "obstagoon": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Facade",
+                    "Obstruct",
+                    "Adaptive Kick",
+                    "Knock Off"
+                ],
+                "abilities": [
+                    "Guts"
+                ],
+                "teraTypes": [
+                    "Dark"
+                ],
+                "item": "Flame Orb",
+                "evs": {
+                    "Atk": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "pheromosa": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "U-turn",
+                    "Low Kick",
+                    "Ice Beam",
+                    "Genesect Kick"
+                ],
+                "abilities": [
+                    "Duck Boost"
+                ],
+                "teraTypes": [
+                    "Bug"
+                ],
+                "item": "Life Orb",
+                "evs": {
+                    "Atk": 252,
+                    "SpA": 4,
+                    "Spe": 252
+                },
+                "nature": "Naive"
+            }
+        ]
+    },
+    "dianciemega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Diamond Storm",
+                    "Moonblast",
+                    "Draining Kiss",
+                    "Aura Cylinder"
+                ],
+                "abilities": [
+                    "Clear Body"
+                ],
+                "teraTypes": [
+                    "Rock"
+                ],
+                "item": "Diancite",
+                "evs": {
+                    "HP": 108,
+                    "SpA": 184,
+                    "Spe": 216
+                },
+                "nature": "Hasty"
+            }
+        ]
+    },
+    "typenull": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "U-turn",
+                    "Toxic",
+                    "Lopunny Kick",
+                    "Recover"
+                ],
+                "abilities": [
+                    "Regenerator"
+                ],
+                "teraTypes": [
+                    "Normal"
+                ],
+                "item": "Eviolite",
+                "evs": {
+                    "HP": 248,
+                    "Def": 8,
+                    "SpD": 252
+                },
+                "nature": "Sassy"
+            }
+        ]
+    },"glaliemega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Lopunny Kick",
+                    "Facade",
+                    "Explosion",
+                    "Crunch"
+                ],
+                "abilities": [
+                    "Intrepid Sword"
+                ],
+                "teraTypes": [
+                    "Ice"
+                ],
+                "item": "Glalitite",
+                "evs": {
+                    "Atk": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }
+        ]
+    },
+    "abomasnowmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Blizzard",
+                    "Aurora Veil",
+                    "Giga Drain",
+                    "Earth Power"
+                ],
+                "abilities": [
+                    "Snow Warning"
+                ],
+                "teraTypes": [
+                    "Grass"
+                ],
+                "item": "Abomasite",
+                "evs": {
+                    "HP": 252,
+                    "Def": 4,
+                    "SpA": 252
+                },
+                "nature": "Modest"
+            }
+        ]
+    },
+    "sharpedomega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Protect",
+                    "Flip Turn",
+                    "Liquidation",
+                    "Adaptive Kick"
+                ],
+                "abilities": [
+                    "Speed Boost"
+                ],
+                "teraTypes": [
+                    "Water"
+                ],
+                "item": "Sharpedonite",
+                "evs": {
+                    "Atk": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }
+        ]
+    },
+    "slowbromega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Aura Cylinder",
+                    "Slack Off",
+                    "Ice Beam",
+                    "Iron Defense"
+                ],
+                "abilities": [
+                    "Regenerator"
+                ],
+                "teraTypes": [
+                    "Water"
+                ],
+                "item": "Slowbronite",
+                "evs": {
+                    "HP": 248,
+                    "Def": 216,
+                    "SpD": 44
+                },
+                "nature": "Bold"
+            }
+        ]
+    },
+    "houndoommega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Dark Pulse",
+                    "Flamethrower",
+                    "Aura Cylinder",
+                    "Will-O-Wisp"
+                ],
+                "abilities": [
+                    "Drought"
+                ],
+                "teraTypes": [
+                    "Dark"
+                ],
+                "item": "Houndoominite",
+                "evs": {
+                    "SpA": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "zygarde": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Thousand Arrows",
+                    "Extreme Speed",
+                    "Coil",
+                    "Zekrom Kick"
+                ],
+                "abilities": [
+                    "Power Construct"
+                ],
+                "teraTypes": [
+                    "Fairy"
+                ],
+                "item": "Leftovers",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 252,
+                    "SpD": 4
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "necrozmaduskmane": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Sunsteel Strike",
+                    "Morning Sun",
+                    "Photon Geyser",
+                    "Thunder Wave"
+                ],
+                "abilities": [
+                    "Prism Armor"
+                ],
+                "teraTypes": [
+                    "Psychic"
+                ],
+                "item": "Solganium Z",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 252,
+                    "SpD": 4
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "gyaradosmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Waterfall",
+                    "Power Whip",
+                    "Thunder Wave",
+                    "Taunt"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Water"
+                ],
+                "item": "Gyaradosite",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 252,
+                    "SpD": 4
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "audinomega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Aura Cylinder",
+                    "Ice Beam",
+                    "Thunder Wave",
+                    "Recover"
+                ],
+                "abilities": [
+                    "Regenerator"
+                ],
+                "teraTypes": [
+                    "Normal"
+                ],
+                "item": "Audinite",
+                "evs": {
+                    "HP": 252,
+                    "SpA": 4,
+                    "SpD": 252
+                },
+                "nature": "Calm"
+            }
+        ]
+    },
+    "heracrossmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Genesect kick",
+                    "Rock Blast",
+                    "Swords Dance",
+                    "Facade"
+                ],
+                "abilities": [
+                    "Guts"
+                ],
+                "teraTypes": [
+                    "Bug"
+                ],
+                "item": "Heracronite",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 252,
+                    "SpD": 4
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "steelixmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Body Press",
+                    "Iron Defense",
+                    "Dragon Tail",
+                    "Genesect Slash"
+                ],
+                "abilities": [
+                    "Sheer Force"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "item": "Steelixite",
+                "evs": {
+                    "HP": 252,
+                    "Def": 252,
+                    "SpD": 4
+                },
+                "nature": "Impish"
+            }
+        ]
+    },
+    "pinsirmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Facade",
+                    "Return",
+                    "Adaptive Kick",
+                    "Throat Chop"
+                ],
+                "abilities": [
+                    "Hyper Cutter"
+                ],
+                "teraTypes": [
+                    "Bug"
+                ],
+                "item": "Pinsirite",
+                "evs": {
+                    "Atk": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "gengarmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Aura Cylinder",
+                    "Hex",
+                    "Substitute",
+                    "Thunder Wave"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Ghost"
+                ],
+                "item": "Gengarite",
+                "evs": {
+                    "HP": 4,
+                    "SpA": 252,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            },
+            {
+                "role": "filler",
+                "movepool": [
+                    "Perish Song",
+                    "Substitute",
+                    "Protect",
+                    "Shadow Ball"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Ghost"
+                ],
+                "item": "Gengarite",
+                "evs": {
+                    "HP": 252,
+                    "SpA": 4,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "tapulele": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Psychic",
+                    "Aura Cylinder",
+                    "Moonblast",
+                    "Psyshock"
+                ],
+                "abilities": [
+                    "Psychic Surge"
+                ],
+                "teraTypes": [
+                    "Psychic"
+                ],
+                "item": "Choice Scarf",
+                "evs": {
+                    "HP": 4,
+                    "SpA": 252,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "sneasler": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Adaptive Kick",
+                    "Dire Claw",
+                    "Fake Out",
+                    "Acrobatics"
+                ],
+                "abilities": [
+                    "Unburden"
+                ],
+                "teraTypes": [
+                    "Flying"
+                ],
+                "item": "Poisonium Z",
+                "evs": {
+                    "Atk": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }
+        ]
+    },
+    "calyrexshadow": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Substitute",
+                    "Protect",
+                    "Hex",
+                    "Will-O-Wisp"
+                ],
+                "abilities": [
+                    "Teddy Stall"
+                ],
+                "teraTypes": [
+                    "Psychic"
+                ],
+                "item": "Leftovers",
+                "evs": {
+                    "HP": 252,
+                    "SpA": 4,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "landorustherian": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "U-turn",
+                    "Earthquake",
+                    "Fly",
+                    "Taunt"
+                ],
+                "abilities": [
+                    "Teddy Stall"
+                ],
+                "teraTypes": [
+                    "Flying"
+                ],
+                "item": "Flyinium Z",
+                "evs": {},
+                "nature": ""
+            }
+        ]
+    },
+    "blazikenmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Blaze Kick",
+                    "Lopunny Kick",
+                    "Protect",
+                    "Adaptive Kick"
+                ],
+                "abilities": [
+                    "Speed Boost"
+                ],
+                "teraTypes": [
+                    "Fire"
+                ],
+                "item": "Blazikenite",
+                "evs": {
+                    "HP": 4,
+                    "Atk": 252,
+                    "Spe": 252
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "lucariomega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Drain Punch",
+                    "Extreme Speed",
+                    "Thunder Punch",
+                    "Genesect Slash"
+                ],
+                "abilities": [
+                    "Intrepid Sword"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "item": "Lucarionite",
+                "evs": {
+                    "HP": 4,
+                    "Atk": 252,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }
+        ]
+    },
+    "aerodactylmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Psychic Fangs",
+                    "Pursuit",
+                    "Dragon Dance",
+                    "Spectral Thief"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Rock"
+                ],
+                "item": "Aerodactylite",
+                "evs": {},
+                "nature": ""
+            }
+        ]
+    },
+    "scizormega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Bullet Punch",
+                    "Pursuit",
+                    "Adaptive Kick",
+                    "Genesect Kick"
+                ],
+                "abilities": [
+                    "Technician"
+                ],
+                "teraTypes": [
+                    "Bug"
+                ],
+                "item": "Scizorite",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 252,
+                    "SpD": 4
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "latiosmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Thunder Wave",
+                    "Recover",
+                    "Luster Purge",
+                    "Substitute"
+                ],
+                "abilities": [
+                    "Levitate"
+                ],
+                "teraTypes": [
+                    "Dragon"
+                ],
+                "item": "Latiosite",
+                "evs": {
+                    "HP": 252,
+                    "SpA": 4,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "absolmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Night Slash",
+                    "Adaptive Kick",
+                    "Pursuit",
+                    "Spectral Thief"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Dark"
+                ],
+                "item": "Absolite",
+                "evs": {
+                    "HP": 4,
+                    "Atk": 252,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }
+        ]
+    },
+    "pidgeotmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Hurricane",
+                    "Heat Wave",
+                    "Swagger",
+                    "Roost"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Normal"
+                ],
+                "item": "Pidgeotite",
+                "evs": {
+                    "SpA": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "ampharosmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Dazzling Gleam",
+                    "Thunderbolt",
+                    "Cotton Guard",
+                    "Volt Switch"
+                ],
+                "abilities": [
+                    "Static"
+                ],
+                "teraTypes": [
+                    "Electric"
+                ],
+                "item": "Ampharosite",
+                "evs": {
+                    "HP": 252,
+                    "Def": 4,
+                    "SpA": 252
+                },
+                "nature": "Modest"
+            }
+        ]
+    },
+    "venusaurmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Substitute",
+                    "Giga Drain",
+                    "Leech Seed",
+                    "Protect"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Grass"
+                ],
+                "item": "Venusaurite",
+                "evs": {
+                    "HP": 252,
+                    "SpA": 4,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "tyranitarmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Pursuit",
+                    "Stone Edge",
+                    "Spectral Thief",
+                    "Dragon Dance"
+                ],
+                "abilities": [
+                    "Sand Stream"
+                ],
+                "teraTypes": [
+                    "Rock"
+                ],
+                "item": "Tyranitarite",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 252,
+                    "SpD": 4
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "aggronmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Body Press",
+                    "Genesect Kick",
+                    "Iron Defense",
+                    "Taunt"
+                ],
+                "abilities": [
+                    "Dauntless Shield"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "item": "Aggronite",
+                "evs": {
+                    "HP": 252,
+                    "Def": 252,
+                    "SpD": 4
+                },
+                "nature": "Impish"
+            }
+        ]
+    },
+    "manectricmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Volt Switch",
+                    "Thunderbolt",
+                    "Flamethrower",
+                    "Ice Beam"
+                ],
+                "abilities": [
+                    "Hadron Engine"
+                ],
+                "teraTypes": [
+                    "Electric"
+                ],
+                "item": "Manectite",
+                "evs": {
+                    "HP": 4,
+                    "SpA": 252,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "kangaskhanmega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Fake Out",
+                    "Power-Up Punch",
+                    "Genesect Slash",
+                    "Lopunny Kick"
+                ],
+                "abilities": [
+                    "Scrappy"
+                ],
+                "teraTypes": [
+                    "Normal"
+                ],
+                "item": "Kangaskhanite",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 252,
+                    "SpD": 4
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "sceptilemega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Shed Tail",
+                    "Giga Drain",
+                    "Ice Beam",
+                    "Dragon Pulse"
+                ],
+                "abilities": [
+                    "Disguise"
+                ],
+                "teraTypes": [
+                    "Grass"
+                ],
+                "item": "Sceptilite",
+                "evs": {
+                    "SpA": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "banettemega": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Spectral Thief",
+                    "Sucker Punch",
+                    "Will-O-Wisp",
+                    "Pursuit"
+                ],
+                "abilities": [
+                    "Suppression"
+                ],
+                "teraTypes": [
+                    "Ghost"
+                ],
+                "item": "Banettite",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 252,
+                    "SpD": 4
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },"scrafty": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Throat Chop",
+                    "Spectral Thief",
+                    "Adaptive Kick",
+                    "Fake Out"
+                ],
+                "abilities": [
+                    "Teddy Stall"
+                ],
+                "teraTypes": [
+                    "Poison"
+                ],
+                "item": "Assault Vest",
+                "evs": {
+                    "HP": 216,
+                    "Atk": 148,
+                    "Def": 52,
+                    "SpD": 60,
+                    "Spe": 32
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "dracovish": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Fishious Rend",
+                    "Psychic Fangs",
+                    "Zekrom Kick",
+                    "Crunch"
+                ],
+                "abilities": [
+                    "Gorilla Tactics"
+                ],
+                "teraTypes": [
+                    "Water"
+                ],
+                "item": "Choice Scarf",
+                "evs": {
+                    "Atk": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }
+        ]
+    },
+    "archeops": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Earthquake",
+                    "Spectral Thief",
+                    "Stone Edge",
+                    "Roost"
+                ],
+                "abilities": [
+                    "Magic Guard"
+                ],
+                "teraTypes": [
+                    "Rock"
+                ],
+                "item": "Life Orb",
+                "evs": {
+                    "Atk": 252,
+                    "SpD": 4,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }
+        ]
+    },
+    "weavile": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Knock Off",
+                    "Pursuit",
+                    "Ice Spinner",
+                    "Spectral Thief"
+                ],
+                "abilities": [
+                    "Illusion"
+                ],
+                "teraTypes": [
+                    "Ice"
+                ],
+                "item": "Choice Band",
+                "evs": {
+                    "HP": 4,
+                    "Atk": 252,
+                    "Spe": 252
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "ironvaliant": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Moonblast",
+                    "Adaptive Kick",
+                    "Knock Off",
+                    "Spectral Thief"
+                ],
+                "abilities": [
+                    "Download"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "item": "Choice Scarf",
+                "evs": {
+                    "Atk": 68,
+                    "SpA": 188,
+                    "Spe": 252
+                },
+                "nature": "Naive"
+            }
+        ]
+    },
+    "fluttermane": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Moonblast",
+                    "Shadow Ball",
+                    "Thunderbolt",
+                    "Power Gem"
+                ],
+                "abilities": [
+                    "Illusion"
+                ],
+                "teraTypes": [
+                    "Ghost"
+                ],
+                "item": "Choice Specs",
+                "evs": {
+                    "HP": 4,
+                    "SpA": 252,
+                    "Spe": 252
+                },
+                "nature": "Timid"
+            }
+        ]
+    },
+    "annihilape": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "U-turn",
+                    "Final Gambit",
+                    "Adaptive Kick",
+                    "Spectral Thief"
+                ],
+                "abilities": [
+                    "Illusion"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "item": "Choice Scarf",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 4,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }
+        ]
+    },
+    "breloom": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Leech Seed",
+                    "Spore",
+                    "Protect",
+                    "Substitute"
+                ],
+                "abilities": [
+                    "Prankster"
+                ],
+                "teraTypes": [
+                    "Steel"
+                ],
+                "item": "Leftovers",
+                "evs": {
+                    "HP": 252,
+                    "Def": 252,
+                    "SpD": 4
+                },
+                "nature": "Bold"
+            }
+        ]
+    },
+    "necrozmadawnwings": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Photon Geyser",
+                    "Moongeist Beam",
+                    "Calm Mind",
+                    "Moonlight"
+                ],
+                "abilities": [
+                    "Illusion"
+                ],
+                "teraTypes": [
+                    "Fairy"
+                ],
+                "item": "Ultranecrozium Z",
+                "evs": {
+                    "HP": 252,
+                    "SpA": 252,
+                    "SpD": 4
+                },
+                "nature": "Modest"
+            }
+        ]
+    },"ironhands": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Volt Switch",
+                    "Adaptive Kick",
+                    "Fake Out",
+                    "Ice Punch"
+                ],
+                "abilities": [
+                    "Regenerator"
+                ],
+                "teraTypes": [
+                    "Fighting"
+                ],
+                "item": "Assault Vest",
+                "evs": {
+                    "HP": 252,
+                    "Def": 104,
+                    "SpD": 152
+                },
+                "nature": "Sassy"
+            }
+        ]
+    },
+    "zacian": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Genesect Slash",
+                    "Sacred Sword",
+                    "Psychic Fangs",
+                    "Swords Dance"
+                ],
+                "abilities": [
+                    "Sword of Ruin"
+                ],
+                "teraTypes": [
+                    "Fairy"
+                ],
+                "item": "Life Orb",
+                "evs": {
+                    "HP": 4,
+                    "Atk": 252,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }
+        ]
+    },
+    "gliscor": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "U-turn",
+                    "Throat Chop",
+                    "Skitter Smack",
+                    "Taunt"
+                ],
+                "abilities": [
+                    "Teddy Stall"
+                ],
+                "teraTypes": [
+                    "Dark"
+                ],
+                "item": "Leftovers",
+                "evs": {
+                    "HP": 252,
+                    "Atk": 252,
+                    "SpD": 4
+                },
+                "nature": "Adamant"
+            }
+        ]
+    },
+    "blissey": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Soft-Boiled",
+                    "Seismic Toss",
+                    "Thunder Wave",
+                    "Heal Bell"
+                ],
+                "abilities": [
+                    "Innards Out"
+                ],
+                "teraTypes": [
+                    "Ice"
+                ],
+                "item": "Leftovers",
+                "evs": {
+                    "HP": 252,
+                    "SpD": 252,
+                    "Spe": 4
+                },
+                "nature": "Gentle"
+            }
+        ]
+    },
+    "ogerponhearthflame": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Solar Blade",
+                    "Ivy Cudgel",
+                    "U-turn",
+                    "Spiky Shield"
+                ],
+                "abilities": [
+                    "Orichalcum Pulse"
+                ],
+                "teraTypes": [
+                    "Fire"
+                ],
+                "item": "Hearthflame Mask",
+                "evs": {
+                    "HP": 4,
+                    "Atk": 252,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }
+        ]
+    },
+"zekrom": {
+        "level": 100,
+        "sets": [
+            {
+                "role": "filler",
+                "movepool": [
+                    "Zekrom Kick",
+                    "Fusion Bolt",
+                    "Recover",
+                    "Dragon Dance"
+                ],
+                "abilities": [
+                    "Teddy Stall"
+                ],
+                "teraTypes": [
+                    "Stellar"
+                ],
+                "item": "Leftovers",
+                "evs": {
+                    "HP": 4,
+                    "Atk": 252,
+                    "Spe": 252
+                },
+                "nature": "Jolly"
+            }
+        ]
+    }
+}

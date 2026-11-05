@@ -1,4 +1,15 @@
 export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
+	duckboost: {
+		name: "Duck Boost",
+		desc: "+2 Omniboost and 1/3 heal on switch in",
+		shortDesc: "Omniboost and heal on switch in",
+},
+	teddystall: {
+		name: "Teddy Stall",
+		desc: "+2 to def and spdef, heals 1/4, and gives toxic on switch in. Heals 1/8 at end of turn and 1/8 from poison at end of turn.", 
+		shortDesc: "Defensive buff, heal, toxic on switch in. Heals from poison at the end of each turn and heals more.",
+},
+
 	noability: {
 		name: "No Ability",
 		shortDesc: "Does nothing.",

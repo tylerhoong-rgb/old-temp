@@ -16,7 +16,7 @@ If you specify a section that already exists, your format will be added to the b
 New sections will be added to the bottom of the specified column.
 The column value will be ignored for repeat sections.
 */
-
+import {Formats as CustomFormats} from './custom-formats';
 export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// S/V Singles
@@ -4727,3 +4727,4 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['HP Percentage Mod', 'Cancel Mod', 'Desync Clause Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
 	},
 ];
+
